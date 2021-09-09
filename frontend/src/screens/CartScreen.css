@@ -1,0 +1,156 @@
+.cartscreen {
+  display:flex;
+  max-width: 1300px;    
+  margin: 10rem auto;
+  height:1360px;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+/* Paypal button*/
+.paypalBtn{
+position:sticky;
+
+
+}
+
+.cartscreen h2{
+  margin-bottom: 1rem;
+}
+
+.cartscreen__left{
+ flex:0.7;
+ margin-right: 1rem;
+ background-color: transparent;
+ padding: 1rem;
+}
+.cartscreen__back__img{
+     -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+} 
+.cartscreen__back{
+  text-align: center;
+}
+
+.cartscreen__right{
+ flex: 0.3;
+ background: #fff;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.4);   
+ height: fit-content;
+ margin-right: 30px;
+ margin-top:30px
+}
+
+.cartscreen__right div{
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding:1rem;
+}
+
+.cartscreen__right div:last-child { 
+  border:none;
+}
+
+.cartscreen__info p {
+  padding: 8px;
+}
+
+.cartscreen__right div button{
+  padding:10px 17px;
+  width: 100%;
+  background: #171717;
+  color: #f4f4f4;
+  border:1px solid #171717;
+  cursor: pointer;
+}
+
+.cartscreen__right div button:hover{ 
+  opacity: 0.9;
+}  
+
+@media (max-width:1320px){
+  .cartscreen{
+      max-width: 900px;
+      height:96rem;
+  }
+}
+@media (max-width:1100px){
+  .cartscreen{
+      max-width: 900px;
+      height:96rem;
+  }
+}
+@media (max-width: 960px){
+  .cartscreen{
+      max-width: 800px;
+      flex-direction: column;
+      height:95rem;
+  }
+  
+  .cartscreen__left{
+      margin:0;
+  }
+  
+  .cartscreen__right{
+      margin:1rem;
+  }
+}
+
+
+
+
+@media (max-width: 700px){
+  .cartscreen{
+ 
+    height:110rem;
+}
+}
+
+/* partie cart credit */
+.App {
+  text-align: center;
+}
+.gpay-card-info-container {
+  background-color: #61dafb;
+}
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(153, 17, 17);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
